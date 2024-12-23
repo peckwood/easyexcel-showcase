@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import java.util.Date;
 import java.util.List;
 
-public class WriteTest {
+public class WriteDemo01 {
     /**
      * 不创建对象的写
      */
@@ -18,7 +18,7 @@ public class WriteTest {
         // 这里 需要指定写用哪个class去写，然后写到第一个sheet，名字为模板 然后文件流会自动关闭
         EasyExcel.write(fileName).head(head()).sheet("模板").doWrite(dataList());
     }
-    private List<List<String>> head() {
+    public static List<List<String>> head() {
         List<List<String>> list = ListUtils.newArrayList();
         List<String> head0 = ListUtils.newArrayList();
         head0.add("大标题");
@@ -34,7 +34,7 @@ public class WriteTest {
         list.add(head2);
         return list;
     }
-    private List<List<Object>> dataList() {
+    public static List<List<Object>> dataList() {
         List<List<Object>> list = ListUtils.newArrayList();
         for (int i = 0; i < 10; i++) {
             List<Object> data = ListUtils.newArrayList();
