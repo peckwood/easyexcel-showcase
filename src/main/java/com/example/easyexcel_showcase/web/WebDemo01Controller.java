@@ -12,7 +12,7 @@ import java.net.URLEncoder;
 @RestController
 public class WebDemo01Controller {
 
-    // http://localhost:8080/web-demo01
+    // 通过 http://localhost:8080/web-demo01 访问
     @GetMapping("web-demo01")
     public void web1(HttpServletResponse response) throws IOException {
         String fileName = URLEncoder.encode("文件名", "UTF-8").replaceAll("\\+", "%20");

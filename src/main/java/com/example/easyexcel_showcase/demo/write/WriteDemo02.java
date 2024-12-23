@@ -4,7 +4,7 @@ import com.alibaba.excel.EasyExcel;
 import com.alibaba.excel.ExcelWriter;
 import com.alibaba.excel.write.metadata.WriteSheet;
 import com.alibaba.excel.write.style.column.SimpleColumnWidthStyleStrategy;
-import com.example.easyexcel_showcase.handler.CustomCellWriteHandler;
+import com.example.easyexcel_showcase.handler.WriteDemo02CustomCellWriteHandler;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -90,7 +90,7 @@ public class WriteDemo02 {
         });
 
 
-        CustomCellWriteHandler handler = new CustomCellWriteHandler();
+        WriteDemo02CustomCellWriteHandler handler = new WriteDemo02CustomCellWriteHandler();
         handler.setDataSize(gzdDataList.size());
         handler.setTitleSize(titleList.size());
         handler.setInsuranceTitleSize(insuranceTitleList.size());

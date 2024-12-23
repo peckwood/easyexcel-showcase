@@ -1,6 +1,5 @@
 package com.example.easyexcel_showcase.handler;
 
-import com.alibaba.excel.metadata.data.CellData;
 import com.alibaba.excel.metadata.data.WriteCellData;
 import com.alibaba.excel.write.handler.CellWriteHandler;
 import com.alibaba.excel.write.handler.context.CellWriteHandlerContext;
@@ -13,7 +12,7 @@ import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.ss.util.CellRangeAddress;
 
 @Slf4j
-public class CustomCellWriteHandler implements CellWriteHandler {
+public class WriteDemo02CustomCellWriteHandler implements CellWriteHandler {
     private Integer dataSize;
     private Integer titleSize;
     private Integer insuranceTitleSize;
