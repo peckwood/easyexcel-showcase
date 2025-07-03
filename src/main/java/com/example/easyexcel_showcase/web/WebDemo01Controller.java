@@ -12,7 +12,8 @@ import java.net.URLEncoder;
 @RestController
 public class WebDemo01Controller {
 
-    // 通过 http://localhost:8080/web-demo01 访问
+        // 通过 http://localhost:8080/web-demo01 访问
+    // 输出excel
     @GetMapping("web-demo01")
     public void web1(HttpServletResponse response) throws IOException {
         String fileName = URLEncoder.encode("文件名", "UTF-8").replaceAll("\\+", "%20");
