@@ -4,6 +4,7 @@ import com.alibaba.excel.EasyExcel;
 import com.alibaba.excel.util.ListUtils;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -19,14 +20,14 @@ public class WriteDemo01 {
         EasyExcel.write(fileName).head(head()).sheet("模板").doWrite(dataList());
     }
     public static List<List<String>> head() {
-        List<List<String>> list = ListUtils.newArrayList();
-        List<String> head0 = ListUtils.newArrayList();
+        List<List<String>> list = new ArrayList<>();
+        List<String> head0 = new ArrayList<>();
         head0.add("大标题");
         head0.add("字符串" + System.currentTimeMillis());
-        List<String> head1 = ListUtils.newArrayList();
+        List<String> head1 = new ArrayList<>();
         head1.add("大标题");
         head1.add("数字" + System.currentTimeMillis());
-        List<String> head2 = ListUtils.newArrayList();
+        List<String> head2 = new ArrayList<>();
         head2.add("大标题");
         head2.add("日期" + System.currentTimeMillis());
         list.add(head0);
@@ -35,9 +36,9 @@ public class WriteDemo01 {
         return list;
     }
     public static List<List<Object>> dataList() {
-        List<List<Object>> list = ListUtils.newArrayList();
+        List<List<Object>> list = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
-            List<Object> data = ListUtils.newArrayList();
+            List<Object> data = new ArrayList<>();
             data.add("字符串" + i);
             data.add(0.56);
             data.add(new Date());
