@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>easyexcel-showcase</artifactId>
+	<artifactId>easyexcel-showcase-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>easyexcel-showcase-project</name>
 	<description>Demo project for Spring Boot</description>
